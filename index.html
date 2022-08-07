@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>JS valute</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="main__hero hero">
+      <div class="hero__container container">
+        <div class="hero__inner">
+          <h1 class="hero__title text-center mb-2 h1">Sayohat</h1>
+          <p class="mb-1 fs-6 text-center text-primary">Bilet narxi: 1.000.000 UZS</p>
+          <p class="mb-1 fs-6 text-center text-success">Ekanom: 1.000.000 UZS</p>
+          <p class="mb-1 fs-6 text-center text-success">Biznes: 2.000.000 UZS</p>
+          <p class="mb-1 fs-6 text-center text-success">Vip: 4.000.000 UZS</p>
+          <form class="hero__form row g-3 justify-content-center mt-3 mb-4">
+            <div class="hero__col col-auto">
+              <label class="hero__label visually-hidden" for="valute">Son kiriting</label>
+              <input class="hero__input form-control" type="number" id="valute" placeholder="USD" required>
+
+              <input class="hero__input-check ms-1 mt-3" type="checkbox" id="privelige">
+              <label class="hero__label-check " for="privelige">Bola va qariyalarga 30% chegirma</label>
+            </div>
+            <div class=" hero__col col-auto">
+              <button class="hero__btn btn btn-primary" type="submit">Confirm</button>
+              <button class="hero__btn btn btn-danger" type="reset">Delete</button>
+            </div>
+          </form>
+
+          <div class="hero__output output">
+            <output class="output__result"></output>
+
+            <p class="output__result-sum m-0"></p>
+            <p class="output__result-change m-0"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

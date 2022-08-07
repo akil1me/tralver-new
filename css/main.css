@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+}
+
+body {
+  height: auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-image: url("../img/bg-image.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.hero__container {
+  display: flex;
+  height: 100vh;
+}
+
+.hero__inner {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 40px 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgb(162, 162, 162);
+  transition: all 0.4s ease;
+}
+
+.hero__output {
+  text-align: center;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.output__result-sum,
+.output__result-change {
+  color: #0d6efd;
+}
+
+.hero__input-check:checked~.hero__label-check {
+  color: green;
+}
